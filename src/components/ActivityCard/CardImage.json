@@ -1,42 +1,38 @@
 [
     {
         "type": "SOCIAL",
-        "image": "https://images.theconversation.com/files/366100/original/file-20201028-17-8cpm3p.jpg?ixlib=rb-1.1.0&rect=2589%2C92%2C3909%2C3909&q=45&auto=format&w=240&h=240&fit=crop"
+        "image": "https://www.signupgenius.com/cms/images/business/company-social-events-promote-team-building-article-600x400.jpg"
     },
     {
         "type": "RECREATIONAL",
-        "image": ""
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6bnux7Q1ZDdCSSiI1wGR7fP7104ABDsO5g69ZLkOLdvq7-gFLjHhFIW83KRB9TGgjJ0&usqp=CAU"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "EDUCATION",
+        "image": "https://www.studyinternational.com/wp-content/uploads/2018/06/study-english.jpg"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "DIY",
+        "image": "https://img.freepik.com/premium-photo/people-diy-hobby-work-home-concept-leisure-activity-adult-man-working-old-furniture-renewing-restoring-handmade-work-male-people-sustainability-circular-economy_425263-5617.jpg"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "CHARITY",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcOxoNvajio-kkezyaIKTpYk1dwJN7yB66w&usqp=CAU"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "COOKING",
+        "image": "https://raisingchildren.net.au/__data/assets/image/0021/72813/cooking-activity-narrow.jpg"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "RELAXATION",
+        "image": "https://wellbeingquotient.com/wp-content/uploads/Practice-a-relaxation-technique-1024x683.jpg"
     },
     {
-        "type": "",
-        "image": ""
+        "type": "MUSIC",
+        "image": "https://www.usnews.com/object/image/00000150-952f-d511-ad79-9faf32dd0000/151023-playingguitar-stock.jpg?update-time=1445611997665&size=responsive640"
     },
     {
-        "type": "",
-        "image": ""
-    },
-    {
-        "type": "",
-        "image": ""
+        "type": "BUSYWORK",
+        "image": "https://corporatejobbank.com/wp-content/uploads/2019/07/Administrative-Employee-e1562343227427.jpg"
     }
 ]
