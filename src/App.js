@@ -6,6 +6,7 @@ import './App.css';
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import ActivityCard from "./components/ActivityCard/ActivityCard";
 import FirstPage from "./components/FirstPage/FirstPage"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <FirstPage/>
       <Bored />
       <ActivityPage />
+      <Footer/>
     </div>
   )
 }
