@@ -1,8 +1,6 @@
-import React, { useState } from "react";
-// import Bored from "./components/Bored";
+import React, { useState, useEffect } from "react";
 import Youtube from "./components/Youtube";
 import './App.css';
-// import ActivityCard from "./components/ActivityCard/ActivityCard";
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import Axios from "axios";
 
@@ -15,35 +13,25 @@ function App() {
   const getCurrentActivites = () => { //will be an onclick function --> two diff components (try this button; and try more)
     const activityArray = [];// will push api data objects to this array for each query search result
 
-    queryArray.map(q => {
-      // console.log("i'm looping")
-      // console.log(typeof q)
-      // console.log(q)
+    queryArray.forEach(q => {
+      // console.log("looping")
       Axios.get(baseUrl + q)
         .then((response) => {
-          // console.log(response);
           activityArray.push(response.data) // pushing result to activityArray
-          console.log(activityArray)
-          // activityArray.length === 9 && setBoredData(activityArray)
-          
-          return activityArray
-        });
+          if (activityArray.length === 9) {
+          setBoredData(activityArray);  // failing here - doesn't want to work -- once return an object, want to set our state to that , semantics or use state issue?
+          }
+          console.log("array ", activityArray);
+        })
     })
-    console.log(typeof activityArray)
-    // setBoredData(activityArray);  // failing here - doesn't want to work -- once return an object, want to set our state to that , semantics or use state issue?
-    // console.log(boredData);
   }
 
+    return (
+      <div>
+        <button onClick={getCurrentActivites}>Try This - Testing</button>
+        {boredData.length > 0 && <ActivityPage boredData={boredData} fetchNewData={getCurrentActivites} />}
+      </div>
+    )
+  }
 
-  return (
-    <div>
-      {/* <Bored /> */}
-      <button onClick={getCurrentActivites}>Try This - Testing</button>
-      {/* {boredData.length > 0 && boredData[0].activity}
-      {boredData.length > 0 && boredData[8].activity} */}
-      <ActivityPage boredData={boredData} fetchNewData={getCurrentActivites} /> {/* passes down through to other page so i can access and use the data there as a prop */}
-    </div>
-  )
-}
-
-export default App;
+export default App
