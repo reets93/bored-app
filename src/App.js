@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import Youtube from "./components/Youtube";
 import './App.css';
 import ActivityPage from "./components/ActivityPage/ActivityPage";
+import ActivityCard from "./components/ActivityCard/ActivityCard";
+import FirstPage from "./components/FirstPage/FirstPage"
+import Footer from "./components/Footer/Footer"
 import Axios from "axios";
 
 function App() {
@@ -28,8 +31,10 @@ function App() {
 
     return (
       <div>
+        <FirstPage />
         <button onClick={getCurrentActivites}>Try This - Testing</button>
         {boredData.length > 0 && <ActivityPage boredData={boredData} fetchNewData={getCurrentActivites} />}
+        <Footer />
       </div>
     )
   }
