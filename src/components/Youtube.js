@@ -10,7 +10,7 @@ const URL = "https://www.googleapis.com/youtube/v3/search?key="+ youtubeAPI +"&q
   Axios.get(URL)
   .then((response)=>{
     console.log(response);
-    setvideo(response.data.activity);
+    // setvideo(response.data.activity);
   });
 }
   return(

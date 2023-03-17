@@ -1,0 +1,21 @@
+#card-container { 
+    background-color: black;
+    text-align: center;
+    margin: 40%;
+    width: 600px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
+}
+
+
+p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+Card.Title {
+    color: white;
+}

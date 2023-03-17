@@ -4,7 +4,7 @@ import './ActivityCard.css';
 
 function ActivityCard(props) {
     return (
-        <div className="activity-card">
+        <div id='activity-card'className="activity-card">
             <div className="card text-center bg-dark text-white">
                 <img src="https://images.theconversation.com/files/366100/original/file-20201028-17-8cpm3p.jpg?ixlib=rb-1.1.0&rect=2589%2C92%2C3909%2C3909&q=45&auto=format&w=240&h=240&fit=crop" class="card-img" alt="..." />
                 <div className="card-img-overlay">
