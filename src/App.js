@@ -31,10 +31,11 @@ function App() {
 
     return (
       <div>
-        <FirstPage />
-        <button onClick={getCurrentActivites}>Try This - Testing</button>
-        {boredData.length > 0 && <ActivityPage boredData={boredData} fetchNewData={getCurrentActivites} />}
-        <Footer />
+        <FirstPage getCurrentActivites={getCurrentActivites}/>
+        {/* <button onClick={getCurrentActivites}>Try This - Testing</button> */}
+        {boredData.length > 0 && <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />}
+        {boredData.length > 0 && <Footer getCurrentActivites={getCurrentActivites}/>}
+        
       </div>
     )
   }

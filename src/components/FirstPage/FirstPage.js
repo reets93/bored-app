@@ -3,7 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './FirstPage.css'
 
-function FirstPage() {
+function FirstPage(props) {
+const getCurrentActivites = props.getCurrentActivities
+
   return (
 
     <div id='frame'>
@@ -12,7 +14,7 @@ function FirstPage() {
         <Card.Body>
           <Card.Title>Card Title</Card.Title>
 
-          <Button href='#activity-card' variant="primary">Try This</Button>
+          <Button onClick={props.getCurrentActivites} variant="primary">Try This</Button>
         </Card.Body>
       </Card>
       <p>"There are no uninteresting things, only uninterested people."
