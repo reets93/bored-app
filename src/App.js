@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-// import Youtube from "./components/Youtube";
+import React, { useState } from "react";
+import Youtube from "./components/Youtube";
 import './App.css';
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import FirstPage from "./components/FirstPage/FirstPage"
@@ -18,14 +18,13 @@ function App() {
     const activityArray = [];// will push api data objects to this array for each query search result
 
     queryArray.forEach(q => {
-      // console.log("looping")
       Axios.get(baseUrl + q)
         .then((response) => {
           activityArray.push(response.data) // pushing result to activityArray
           if (activityArray.length === 9) {
-            setBoredData(activityArray);  // failing here - doesn't want to work -- once return an object, want to set our state to that , semantics or use state issue?
+            setBoredData(activityArray);
           if (isStartButtonClicked === false) { //false = not clicked yet
-            setIsStartButtonClicked(true)
+            setIsStartButtonClicked(true) // once clicked it will set to true and then be used in the logic in the return
           }
           }
           console.log("array ", activityArray);
@@ -42,10 +41,6 @@ function App() {
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />
           <Footer getCurrentActivites={getCurrentActivites} /> </> :
         <FirstPage getCurrentActivites={getCurrentActivites} />}
-      {/* <button onClick={getCurrentActivites}>Try This - Testing</button> */}
-      {/* {boredData.length > 0 && <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />}
-      {boredData.length > 0 && <Footer getCurrentActivites={getCurrentActivites} />} */}
-
     </div>
   )
 }

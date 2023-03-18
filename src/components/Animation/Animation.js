@@ -24,6 +24,6 @@ export default function Animation () {
 
             </DrawSVG>
 
-    // </div>
+    </div>
   );
 }
