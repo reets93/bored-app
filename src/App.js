@@ -4,6 +4,8 @@ import './App.css';
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import ActivityCard from "./components/ActivityCard/ActivityCard";
 import FirstPage from "./components/FirstPage/FirstPage"
+import Animation from "./components/Animation/Animation"
+
 import Footer from "./components/Footer/Footer"
 import Axios from "axios";
 
@@ -31,6 +33,7 @@ function App() {
 
     return (
       <div>
+        <Animation/>
         <FirstPage getCurrentActivites={getCurrentActivites}/>
         {/* <button onClick={getCurrentActivites}>Try This - Testing</button> */}
         {boredData.length > 0 && <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />}
