@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import Youtube from "./components/Youtube";
-import './App.css';
+import Youtube from "./components/Youtube/Youtube";
+
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import FirstPage from "./components/FirstPage/FirstPage"
 import Animation from "./components/Animation/Animation"
 import Footer from "./components/Footer/Footer"
 import Axios from "axios";
+import './App.css';
 
 function App() {
   const [boredData, setBoredData] = useState({}); // state that handles the bored api data
@@ -39,6 +40,7 @@ function App() {
       <Animation />
       {isStartButtonClicked ?
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />
+        <Youtube />
           <Footer getCurrentActivites={getCurrentActivites} /> </> :
         <FirstPage getCurrentActivites={getCurrentActivites} />}
     </div>
