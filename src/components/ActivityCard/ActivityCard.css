@@ -1,19 +1,22 @@
 .activity-card {
     width: 240px;
     height: 240px;
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
     /* background-image: url('https://images.theconversation.com/files/366100/original/file-20201028-17-8cpm3p.jpg?ixlib=rb-1.1.0&rect=2589%2C92%2C3909%2C3909&q=45&auto=format&w=240&h=240&fit=crop') */
 }
 
-.card-image-overlay { /*why not working? */
-background-color: rgba(0,0,0,0.5);
-width: 100%;
-height: 100%;
-display: none;
+
+.title {
+    font-weight: 700;
+    color: navy;
+    text-align: center;
 }
 
-.card-title {
-    font-weight: 700;
+.card-text {
+    color: navy;
+    text-align: center;
+    /* justify-content: center; */
 }
 
 img {

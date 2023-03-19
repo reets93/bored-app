@@ -1,6 +1,9 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Animation from '../Animation/Animation';
+import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa";
+
 import './FirstPage.css'
 
 function FirstPage(props) {
@@ -9,17 +12,14 @@ const getCurrentActivites = props.getCurrentActivities
   return (
 
     <div id='frame'>
-      <Card id='card-container'>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Card Title</Card.Title>
-
-          <Button onClick={props.getCurrentActivites} variant="primary">Try This</Button>
-        </Card.Body>
-      </Card>
-      <p>"There are no uninteresting things, only uninterested people."
+          <Animation></Animation>
+          <div className="centreButton">
+          <Button onClick={props.getCurrentActivites} variant="primary" size="lg"><FaArrowRight /> Click Here <FaArrowLeft /></Button>
+          </div>
+            <p>"There are no uninteresting things, only uninterested people."
         G.K. Chesterton</p>
-    </div>
+          
+        </div>
   )
 }
 
