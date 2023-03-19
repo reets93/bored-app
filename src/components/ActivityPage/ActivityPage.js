@@ -15,11 +15,11 @@ for (let i=0; i < boredData.length; i++) {
 //    boredData[i].icon = cardDetails[i].icon
 }
 
-    return (
-        //Added lines 20 and 21 to get cards into a grid of 9 - but now activity text is missing from last 6 cards and I don't know why?
-        <div className="cards">
-      <Row xs={4} md={3} className="g-3">
-            {boredData.map(d => { 
+return (
+    //Added lines 20 and 21 to get cards into a grid of 9 - but now activity text is missing from last 6 cards and I don't know why?
+    <div className="cards">
+  <Row xs={4} md={3} className="g-3">
+        {boredData.map(d => { 
                 return (
                     <div className="activities">
                         <ActivityCard

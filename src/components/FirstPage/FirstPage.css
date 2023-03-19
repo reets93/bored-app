@@ -1,12 +1,18 @@
-p {
-    text-align: center;
-    margin-top: -550px;
-}
-
-#button {
+#frame {
+    top: 60%;
+    transform: translate(-60%, -50%);
+    position: fixed;
+  }
+  
+  p {
+    color: black;
+  }
+  
+  #button {
     position: relative;
-   width: 300px  ! important ;
-   left: 900px ! important;
+    width: 300px !important ;
+    left: 135% !important;
     height: 50px;
     margin-top: 600px;
   }
+  

@@ -11,12 +11,12 @@ const getCurrentActivites = props.getCurrentActivites
 
   return (
     <div >
-      <Card id="bottom">
+      <Card id='bottom'>
 
         <Card.Body id='footer'>
           <Card.Title id='title'><FaLightbulb /> Need some new ideas?</Card.Title>
 
-          <Button id='titleButton' onClick={props.getCurrentActivites} 
+          <Button id='idea' onClick={props.getCurrentActivites} 
           // variant="primary"
           >See more <FaEye /></Button>
         </Card.Body>
