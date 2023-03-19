@@ -7,16 +7,16 @@ import { FaLightbulb} from "react-icons/fa";
 
 
 function Footer(props) {
-const getCurrentActivites = props.getCurrentActivites
+// const getCurrentActivites = props.getCurrentActivites
 
   return (
-    <div >
+    <div>
       <Card id='bottom'>
 
         <Card.Body id='footer'>
           <Card.Title id='title'><FaLightbulb /> Need some new ideas?</Card.Title>
 
-          <Button id='idea' onClick={props.getCurrentActivites} 
+          <Button id='footerButton' onClick={props.getCurrentActivites} 
           // variant="primary"
           >See more <FaEye /></Button>
         </Card.Body>

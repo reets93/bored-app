@@ -3,7 +3,7 @@ import ActivityCard from "../ActivityCard/ActivityCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cardDetails from '../ActivityCard/CardImage.json'
 import Row from "react-bootstrap/Row"
-
+import './ActivityPage.css'
 
 
 function ActivityPage(props) { //pulling in boredData as a prop from app which will be useable here. 

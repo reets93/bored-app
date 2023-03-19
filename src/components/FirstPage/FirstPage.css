@@ -1,18 +1,32 @@
-#frame {
-    top: 60%;
-    transform: translate(-60%, -50%);
-    position: fixed;
-  }
-  
-  p {
-    color: black;
-  }
-  
+ /* #frame { */
+   /* top: 60%; */
+   /* transform: translate(-60%, -50%); */
+   /* position: relative; */
+ /* } */
+
+ #frame{
+  display: inline-block;
+  /* align-self: center; */
+  transform: scale(0.5)
+ }
+
+ p {
+   color: black;
+   text-align: center;
+ }
+
   #button {
-    position: relative;
-    width: 300px !important ;
-    left: 135% !important;
-    height: 50px;
-    margin-top: 600px;
-  }
-  
+   position: relative;
+   /* width: 300px !important; */
+   /* left: 135% !important; */
+   height: 50px;
+   /* margin-top: 600px; */
+   /* align-self: center; */
+   align-self: center;
+ } 
+
+ #buttonDiv{ 
+  display: flex;
+  margin-top: -50%;
+  justify-content: center;
+ } 
