@@ -1,4 +1,10 @@
 #demo-svg path {
-    stroke-dasharray: 1000;
+    stroke-dasharray: 100;
     stroke-dashoffset: 0;
 }
+
+.animation {
+    position: relative;
+    left: -180px;
+    top: -350px;
+  }

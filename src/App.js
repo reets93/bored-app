@@ -37,7 +37,6 @@ function App() {
 
   return (
     <div>
-      <Animation />
       {isStartButtonClicked ?
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />
         <Youtube />
