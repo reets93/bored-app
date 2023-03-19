@@ -13,8 +13,9 @@ const getCurrentActivites = props.getCurrentActivities
 
     <div id='frame'>
           <Animation></Animation>
-          <div className="centreButton">
-          <Button onClick={props.getCurrentActivites} variant="primary" size="lg"><FaArrowRight /> Click Here <FaArrowLeft /></Button>
+          <div >
+          <Button id='button' onClick={props.getCurrentActivites} 
+           ><FaArrowRight /> Click Here <FaArrowLeft /></Button>
           </div>
             <p>"There are no uninteresting things, only uninterested people."
         G.K. Chesterton</p>

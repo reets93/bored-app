@@ -14,9 +14,11 @@ const getCurrentActivites = props.getCurrentActivites
       <Card>
 
         <Card.Body id='footer'>
-          <Card.Title><FaLightbulb /> Need some new ideas?</Card.Title>
+          <Card.Title id='title'><FaLightbulb /> Need some new ideas?</Card.Title>
 
-          <Button onClick={props.getCurrentActivites} variant="primary">See more <FaEye /></Button>
+          <Button id='button' onClick={props.getCurrentActivites} 
+          // variant="primary"
+          >See more <FaEye /></Button>
         </Card.Body>
       </Card>
     </div>

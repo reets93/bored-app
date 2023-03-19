@@ -3,7 +3,10 @@ p {
     margin-top: -550px;
 }
 
-/* .centreButton {
-    display:flex;
-    justify-content:center;
-  } */
+#button {
+    position: relative;
+   width: 300px  ! important ;
+   left: 900px ! important;
+    height: 50px;
+    margin-top: 600px;
+  }

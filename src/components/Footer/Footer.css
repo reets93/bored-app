@@ -1,6 +1,20 @@
 #footer {
     background-color: darkgrey;
-    padding-left: 1000px;
-    
-    
+
+}
+
+#title {
+    padding-left: 700px;
+
+
+}
+
+#button {
+
+    position: absolute;
+    margin-left: 75px;
+    left: 50%;
+    width: 100px;
+    bottom: 5px;
+    top: 5px;
 }

@@ -5,6 +5,7 @@
 
 .animation {
     position: relative;
-    left: -180px;
+    left: 180px;
     top: -350px;
+    
   }
