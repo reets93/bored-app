@@ -10,13 +10,13 @@ function Footer(props) {
 const getCurrentActivites = props.getCurrentActivites
 
   return (
-    <div>
-      <Card>
+    <div >
+      <Card id="bottom">
 
         <Card.Body id='footer'>
           <Card.Title id='title'><FaLightbulb /> Need some new ideas?</Card.Title>
 
-          <Button id='button' onClick={props.getCurrentActivites} 
+          <Button id='titleButton' onClick={props.getCurrentActivites} 
           // variant="primary"
           >See more <FaEye /></Button>
         </Card.Body>

@@ -1,20 +1,27 @@
-#footer {
-    background-color: darkgrey;
-
-}
 
 #title {
-    padding-left: 700px;
-
+    padding-left: 750px;
+    font-size: 20px;
+    margin-bottom: 0px;
+    
 
 }
 
-#button {
+#titleButton {
 
     position: absolute;
-    margin-left: 75px;
-    left: 50%;
-    width: 100px;
-    bottom: 5px;
-    top: 5px;
+    margin-left: 1025px;
+    width: 200px !important;
+    bottom: 20px !important;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+#bottom {
+    
+    background-color: darkgrey;
+    margin-top: 200px;
+    width: 200%;
+   height: 75px;
 }
