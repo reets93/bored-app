@@ -1,0 +1,9 @@
+.explore {
+    /* background-color: rgb(8, 3, 40); */
+    display: inline-block;
+    width: 80%
+}
+
+.card-text{
+ text-align: center;
+}
