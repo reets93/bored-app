@@ -4,16 +4,17 @@
    /* position: relative; */
  /* } */
 
- /* #frame{
+ #frame{
   display: inline-block;
-  align-self: center;
-  transform: scale(0.5)
- } */
+  /* align-self: center; */
+  /* transform: scale(0.5) */
+ }
 
  p {
    color: black;
-   margin-top: -4%;
+   margin-top: -6%;
    text-align: center;
+   font-size: 25px;
  }
 
   /* #button {
@@ -28,6 +29,6 @@
 
  #buttonDiv{ 
   display: flex;
-  margin-top: 5%;
+  margin-top: 3%;
   justify-content: center;
  } 
