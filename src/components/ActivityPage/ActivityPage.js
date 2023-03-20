@@ -12,7 +12,7 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
 
 for (let i=0; i < boredData.length; i++) {
    boredData[i].image = cardDetails[i].image 
-   boredData[i].type = cardDetails[i].type
+//    boredData[i].type = cardDetails[i].type
 //    boredData[i].icon = cardDetails[i].icon
 }
 
@@ -24,7 +24,6 @@ return (
                     //key not working - still an error in console
                     <div className="activities"key={d.id}> 
                         <ActivityCard
-                        
                             icon={d.icon}
                             type={d.type}
                             image={d.image}
