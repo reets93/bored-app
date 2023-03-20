@@ -39,7 +39,6 @@ function App() {
     <div>
       {isStartButtonClicked ?
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />
-        <Youtube />
           <Footer getCurrentActivites={getCurrentActivites} /> </> :
         <FirstPage getCurrentActivites={getCurrentActivites} />}
     </div>
