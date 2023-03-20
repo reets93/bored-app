@@ -8,7 +8,7 @@ class Youtube extends React.Component {
     state = { videos: [], selectedVideo: null };
 
     componentDidMount(){
-        this.onTermSubmit('funny cats');
+        this.onTermSubmit('stupid people');
     }
 
     onTermSubmit = async (term) => {
@@ -23,17 +23,17 @@ class Youtube extends React.Component {
         });
     };
 
-    onVideoSelect = (video) => {
-        this.setState({ selectedVideo: video });
-    }
+    // onVideoSelect = (video) => {
+    //     this.setState({ selectedVideo: video });
+    // }
 
     render() {
     return (
-        <div className="ui container">
-            <SearchBar onSearchCallback={this.onTermSubmit} />
-            <div className="ui grid">
-                <div className="ui row">
-                    <div className="eleven wide column">
+        <div id="#youtube-section" className="container">
+            <SearchBar passingFunction={this.onTermSubmit} />
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg">
                         <VideoDetail video={this.state.selectedVideo}/>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./videoDetail.css";
 
 const VideoDetail = ({ video }) => {
     if(!video){
@@ -6,13 +7,13 @@ const VideoDetail = ({ video }) => {
     }
     const videoURL = `https://www.youtube.com/embed/${video.id.videoId}`;
     return (
-        <div>
-            <div class="embed-responsive embed-responsive-3by4">
-                <iframe class="embed-responsive-item" title="Video Player" src={videoURL} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <div className='col-lg'>
+            <div className="embed-responsive embed-responsive-3by4 video">
+                <iframe className="embed-responsive-item" title="Video Player" src={videoURL} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
-            <div className="ui segment">
-                <h4 className="ui header">{video.snippet.title}</h4>
-                <p>{video.snippet.description}</p>
+            <div className="row">
+                <h5 className="row">{video.snippet.title}</h5>
+                <p className='row'>{video.snippet.description}</p>
             </div>
         </div>
     );
