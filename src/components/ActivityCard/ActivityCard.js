@@ -9,7 +9,7 @@ function ActivityCard(props) {
     // For modal - remove two consts below if not using Modal
     const [modalShow, setModalShow] = React.useState(false);
     const boredData = props.boredData
-
+    // console.log("PROPS", props)
     return (
         <div id='activity-card' className="activity-card">
             <div className="card" >
@@ -23,10 +23,10 @@ function ActivityCard(props) {
                         
                         
                         <>{/* for the explore modal button below. I'm wondering whether the details should be mapped somehow on the ActivityPage? OR whether this should be elsewhere in the code?*/}
-                            <Button boredData={boredData} variant="primary" onClick={() => setModalShow(true)}>
-                                Test-Explore
+                            <Button activity={props.activity} variant="primary" onClick={() => setModalShow(true)}>
+                                {props.activity}
                             </Button>
-                            <ExploreModal boredData={boredData}
+                            <ExploreModal modalData={props}
                                 show={modalShow}
                                 onHide={() => setModalShow(false)}
                             />

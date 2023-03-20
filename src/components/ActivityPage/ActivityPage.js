@@ -9,7 +9,7 @@ import ExploreModal from "../Explore/ExploreModal";
 
 function ActivityPage(props) { //pulling in boredData as a prop from app which will be useable here. 
     const boredData = props.boredData
-
+    // console.log("BOREDDATA", boredData)
 
     for (let i = 0; i < boredData.length; i++) {  // can try to refactor this to a switch statement? I wasn't able to get it working as switch statement
         if (boredData[i].type === "social") {
@@ -45,7 +45,8 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
     return (
         <div className="cards" >
             <Row xs={2} md={3} className="g-3">
-                {boredData.map(d => {
+                {boredData.map((d, i) => {
+                    // console.log(`Data at ${i}`, d)
                     return (
                         //key not working - still an error in console
                         <div className="activities" key={d.id}>
