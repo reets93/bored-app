@@ -10,28 +10,47 @@ import './ActivityPage.css'
 function ActivityPage(props) { //pulling in boredData as a prop from app which will be useable here. 
     const boredData = props.boredData
 
-for (let i=0; i < boredData.length; i++) {
-   boredData[i].image = cardDetails[i].image 
-//    boredData[i].type = cardDetails[i].type
-//    boredData[i].icon = cardDetails[i].icon
-}
 
-return (
-    <div className="cards" >
-  <Row xs={4} md={3} className="g-3">
-        {boredData.map(d => { 
-                return (
-                    //key not working - still an error in console
-                    <div className="activities"key={d.id}> 
-                        <ActivityCard
-                            icon={d.icon}
-                            type={d.type}
-                            image={d.image}
-                            activity={d.activity}
-                        />
-                    </div>
-                )
-            })}
+    for (let i = 0; i < boredData.length; i++) {  // can try to refactor this to a switch statement? I wasn't able to get it working as switch statement
+        if (boredData[i].type === "social") {
+           boredData[i].image = cardDetails[0].image
+        } else if (boredData[i].type === "recreational") {
+        boredData[i].image = cardDetails[1].image
+        } else if (boredData[i].type === "education") {
+        boredData[i].image = cardDetails[2].image
+        } else if (boredData[i].type === "diy") {
+            boredData[i].image = cardDetails[3].image
+        } else if (boredData[i].type === "charity") {
+        boredData[i].image = cardDetails[4].image
+        } else if (boredData[i].type === "cooking") {
+            boredData[i].image = cardDetails[5].image
+        } else if (boredData[i].type === "relaxation") {
+            boredData[i].image = cardDetails[6].image
+        } else if (boredData[i].type === "music") {
+       boredData[i].image = cardDetails[7].image
+        } else if (boredData[i].type === "busywork") {
+        boredData[i].image = cardDetails[8].image
+        }
+    }
+
+
+    return (
+        <div className="cards" >
+            <Row xs={4} md={3} className="g-3">
+                {boredData.map(d => {
+                    return (
+                        //key not working - still an error in console
+                        <div className="activities" key={d.id}>
+                            {console.log(boredData.type)}
+                            <ActivityCard
+                                icon={d.icon}
+                                type={d.type}
+                                image={d.image}
+                                activity={d.activity}
+                            />
+                        </div>
+                    )
+                })}
             </Row>
         </div>
     )
