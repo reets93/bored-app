@@ -43,13 +43,13 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
     }
 
     return (
-        <div className="cards" >
-            <Row xs={2} md={3} className="g-3">
+        <div className="cards row g-3" >
+            {/* <Row xs={2} md={3} className="g-3"> */}
                 {boredData.map((d, i) => {
                     // console.log(`Data at ${i}`, d)
                     return (
                         //key not working - still an error in console
-                        <div className="activities" key={d.id}>
+                        <div className="activities col-lg-4 col-md-6 col-sm-12 col-xs-12" key={d.id}>
                             <ActivityCard
                                 icon={d.icon}
                                 type={d.type}
@@ -59,7 +59,7 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
                         </div>
                     )
                 })}
-            </Row>
+            {/* </Row> */}
             
             {/* Below is attempt to pass boredData to the modal. Remove if not needed */}
             <ExploreModal boredData={boredData}/>
