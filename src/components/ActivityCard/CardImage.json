@@ -1,37 +1,45 @@
 [
-    {
+    { "id": 0,
         "type": "SOCIAL",
         "image": "https://www.signupgenius.com/cms/images/business/company-social-events-promote-team-building-article-600x400.jpg"
     },
     {
+        "id": 1,
         "type": "RECREATIONAL",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI6bnux7Q1ZDdCSSiI1wGR7fP7104ABDsO5g69ZLkOLdvq7-gFLjHhFIW83KRB9TGgjJ0&usqp=CAU"
     },
     {
+        "id": 2,
         "type": "EDUCATION",
         "image": "https://www.studyinternational.com/wp-content/uploads/2018/06/study-english.jpg"
     },
     {
+        "id": 3,
         "type": "DIY",
         "image": "https://img.freepik.com/premium-photo/people-diy-hobby-work-home-concept-leisure-activity-adult-man-working-old-furniture-renewing-restoring-handmade-work-male-people-sustainability-circular-economy_425263-5617.jpg"
     },
     {
+        "id": 4,
         "type": "CHARITY",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKcOxoNvajio-kkezyaIKTpYk1dwJN7yB66w&usqp=CAU"
     },
     {
+        "id": 5,
         "type": "COOKING",
         "image": "https://raisingchildren.net.au/__data/assets/image/0021/72813/cooking-activity-narrow.jpg"
     },
     {
+        "id": 6,
         "type": "RELAXATION",
         "image": "https://wellbeingquotient.com/wp-content/uploads/Practice-a-relaxation-technique-1024x683.jpg"
     },
     {
+        "id": 7,
         "type": "MUSIC",
         "image": "https://www.usnews.com/object/image/00000150-952f-d511-ad79-9faf32dd0000/151023-playingguitar-stock.jpg?update-time=1445611997665&size=responsive640"
     },
     {
+        "id": 8,
         "type": "BUSYWORK",
         "image": "https://corporatejobbank.com/wp-content/uploads/2019/07/Administrative-Employee-e1562343227427.jpg"
     }

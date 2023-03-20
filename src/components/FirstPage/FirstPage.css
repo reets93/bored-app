@@ -4,29 +4,30 @@
    /* position: relative; */
  /* } */
 
- #frame{
+ /* #frame{
   display: inline-block;
-  /* align-self: center; */
+  align-self: center;
   transform: scale(0.5)
- }
+ } */
 
  p {
    color: black;
+   margin-top: -4%;
    text-align: center;
  }
 
-  #button {
+  /* #button {
    position: relative;
-   /* width: 300px !important; */
-   /* left: 135% !important; */
+   width: 300px !important;
+   left: 135% !important;
    height: 50px;
-   /* margin-top: 600px; */
-   /* align-self: center; */
+   margin-top: 600px;
    align-self: center;
- } 
+   align-self: center;
+ }  */
 
  #buttonDiv{ 
   display: flex;
-  margin-top: -50%;
+  margin-top: 5%;
   justify-content: center;
  } 

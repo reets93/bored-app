@@ -7,12 +7,14 @@ function ActivityCard(props) {
     return (
         <div id='activity-card'className="activity-card">
             <div className="card" >
-                <img src={props.image} 
-                className="opacity-50"></img>
+                <img src={props.image} alt=""
+                className="opacity-50" width = "340px" height = "240px"></img>
                 <div className="card-img-overlay">
                     <h4 className="title">{props.type}</h4>
                     <p className="card-text">{props.activity}</p>
-                    <button className='btn btn-primary'>Explore <FaBinoculars /></button>
+                    <div className="d-flex justify-content-center">
+                    <button className='btn btn-primary btn-default'> Explore <FaBinoculars /></button>
+                   </div>
                 </div>
                 </div>
             </div>
