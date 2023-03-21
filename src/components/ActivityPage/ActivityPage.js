@@ -43,8 +43,15 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
     }
 
     return (
-        <div className="cards row g-3" >
-            {/* <Row xs={2} md={3} className="g-3"> */}
+
+        <section>
+            <header className="header">
+                <h3>Give these activities a go!</h3>
+                <p id="headerP">Hover over the cards to see the activity</p>
+            </header>
+
+            <div className="cards row g-3" >
+                {/* <Row xs={2} md={3} className="g-3"> */}
                 {boredData.map((d, i) => {
                     // console.log(`Data at ${i}`, d)
                     return (
@@ -59,11 +66,12 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
                         </div>
                     )
                 })}
-            {/* </Row> */}
-            
-            {/* Below is attempt to pass boredData to the modal. Remove if not needed */}
-            <ExploreModal boredData={boredData}/>
-        </div>
+                {/* </Row> */}
+
+                {/* Below is attempt to pass boredData to the modal. Remove if not needed */}
+                <ExploreModal boredData={boredData} />
+            </div>
+        </section>
     )
 }
 
