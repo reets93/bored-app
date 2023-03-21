@@ -1,71 +1,69 @@
-# Getting Started with Create React App
-Testing
+# Bored?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In our team, we have conceived and created our first collaborative front-end, single-page application. We have created a React front end to build a user-focused platform. We used agile development methodologies to help us work collaboratively. We stored our project code in GitHub, managing our work with a project management tool, and implemented features and bug fixes using the Git branch workflow and pull requests. We have used everything we’ve learned during the bootcamp to create a real-world client-side single-page application that we’ll be able to showcase to potential employers. 
 
-## Available Scripts
+## User Story
 
-In the project directory, you can run:
+- **AS** a mobile device user
+- **I WANT** to use my time wisely rather than wasting it on social media
+- **SO THAT** I can find new things to do at  the click of a button
 
-### `npm start`
+## Acceptance Criteria
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **WHEN** viewing GitHub repo
+- **THEN** folder structure is correct (index.html, CSS folder, style.css, images folder)
+- **WHEN** web page viewed
+- **THEN** only animation, quote and button are visisble
+- **WHEN** 'Click Here' is pressed
+- **THEN** 9 cards are dynamically generated with data from boredapi
+- **WHEN** a user hovers on a card
+- **THEN** title, information about an activty and button scrolls in from the right
+- **WHEN** 'Explore' button is pressed
+- **THEN** a modal appears with YouTube video linked to specific card and Google search bar
+- **WHEN** user inputs search category into Google Search bar
+- **THEN** user will be taken to Google search results
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+Deployed Page: 
+![Home Page](./src/assets/images/Home%20Page.PNG)
+![Activity Cards](./src/assets/images/Cards.png)
+![Hover Function](./src/assets/images/Hover%20Cards.png)
+![Modal]()
 
-### `npm test`
+## Technologies Used
+- Postman: https://web.postman.co/
+- Figma: https://www.figma.com/
+- VS Code: https://code.visualstudio.com/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## APIs used
+- YouTube API: https://developers.google.com/youtube/v3
+- Bored API: https://www.boredapi.com/
 
-### `npm run build`
+## NPM Modules used
+- React SVG Drawing: https://www.npmjs.com/package/react-svg-drawing
+- React Icons: https://www.npmjs.com/package/react-icons
+- Animejs: https://www.npmjs.com/package/animejs
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Credits
+The following websites were used to support this project:
+- https://www.youtube.com/watch?v=mAKYW_1f-dw
+- https://blog.logrocket.com/exploring-anime-js-example-site-animation-project/
+- https://animejs.com/documentation/#lineDrawing
+- https://css-tricks.com/scale-svg/
+- https://www.youtube.com/watch?v=3RvQJX1_fKQ&t=618s
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Colloborators
+- Rita Fitchett https://github.com/reets93
+- Kamel Beloula https://github.com/kamel-beloula
+- Lidia Bhogal https://github.com/LidiaBhogal
+- Lissa Simpson https://github.com/lissasimp
 
-### `npm run eject`
+## Project Presentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
               value={this.state.term}
               onChange={(e) => this.setState({ term: e.target.value })}
             />
-            <small class="form-text text-muted">
+            <small className="form-text text-muted">
               Find a video about your chosen activity
             </small>
 
