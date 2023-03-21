@@ -1,60 +1,48 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import SearchBar from "./SearchBar"
 import API from "./API";
 import VideoDetail from "./VideoDetail";
-// import axios from "axios";
 
-// const KEY = "AIzaSyDNe-EwKY81Imo8_AyAvMBnKbvaBYFqbNs";
-class Youtube extends React.Component {
 
-    state = { videos: [], selectedVideo: null };
+function Youtube(props){
+    console.log(props)
+    const [videos, setVideos] = useState([]);
+    const [selectedVideo, setSelectedVideo] = useState(null);
+    
+    
+    useEffect(() => {
+        console.log("running")
+        onTermSubmit(props.search);
+        console.log("running 43")
+    }, [])
 
-    componentDidMount() {
-        this.onTermSubmit('stupid people');
-        // axios.get({
-        //     baseURL: "https://www.googleapis.com/youtube/v3",
-        //     params: {
-        //         part: "snippet",
-        //         type: "video",
-        //         key: KEY,
-        //         q: "rolling in the deep"
-        //     }
-        // }).then(answers => {
-        //     console.log(answers)
-        // })
-    }
-
-    onTermSubmit = async (term) => {
+    const onTermSubmit = async (term) => {
+        console.log("run")
         const results = await API.get("/search", {
             params: {
                 q: term
             },
         });
         console.log(results)
-        this.setState({
-            videos: results.data.items,
-            selectedVideo: results.data.items[0]
-        });
+        setVideos(results.data.items)
+        setSelectedVideo(results.data.items[0])
+        return
     };
 
-    // onVideoSelect = (video) => {
-    //     this.setState({ selectedVideo: video });
-    // }
-
-    render() {
-        return (
+   return (
             <div id="#youtube-section" className="container">
-                <SearchBar passingFunction={this.onTermSubmit} />
+                <SearchBar passingFunction={onTermSubmit} />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg">
-                            <VideoDetail video={this.state.selectedVideo} />
+                            {console.log(selectedVideo)}
+                            {selectedVideo ? <VideoDetail video={selectedVideo} /> : ""}
+                            
                         </div>
                     </div>
                 </div>
             </div>
         );
-    }
 }
 
 export default Youtube;

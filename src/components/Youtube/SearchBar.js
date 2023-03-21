@@ -15,7 +15,7 @@ class SearchBar extends React.Component {
         <form className="form-inline" onSubmit={this.onFormSubmit}>
           <div className="form-group mb-2">
             <label for="searchBar" className="sr-only">
-              Youtube seach
+              Youtube search
             </label>
             <input
               className="form-control"

@@ -33,7 +33,7 @@ function ExploreModal(props) {
             {/* <Card.Text> */}
               {/* Participants needed: {modalData.participants}</Card.Text> */}
             {/* <SearchBar passingFunction={this.onTermSubmit} /> */}
-            <Youtube />
+            <Youtube search={modalData.activity}/>
             <Button href={`https://www.google.com/search?q=${modalData.activity}`} target="_blank" variant="primary">Explore more on Google</Button>
           </Card.Body>
         </Modal.Body>

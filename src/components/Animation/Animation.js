@@ -2,10 +2,11 @@ import React from "react";
 import DrawSVG from "react-svg-drawing";
 // import anime from "animejs/lib/anime.es.js";
 import "../Animation/Animation.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Animation() {
   return (
-    <div className="animation">
+    <div className="animation col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <DrawSVG
         strokeWidth="5"
         loop={true}
