@@ -17,13 +17,14 @@ function FirstPage(props) {
     <div >
       <div id="frame">
         <Animation></Animation>
-      </div>
-      <div id="buttonDiv" >
+      
+      {/* <div id="buttonDiv" > */}
         <Button id='button' onClick={props.getCurrentActivites}
-        ><FaArrowRight />  Click Here  <FaArrowLeft /></Button>
-      </div>
-      <p>"There are no uninteresting things, only uninterested people."
+        ><span><FaArrowRight  />  Click Here  <FaArrowLeft /></span></Button>
+      {/* </div> */}
+      <p id='quote'>"There are no uninteresting things, only uninterested people."
         G.K. Chesterton</p>
+    </div>
     </div>
   )
 }
