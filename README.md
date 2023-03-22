@@ -24,7 +24,7 @@ In our team, we have conceived and created our first collaborative front-end, si
 - **THEN** user will be taken to Google search results
 
 ## Usage
-Deployed Page: 
+Deployed Page: https://bored-app-rkll.netlify.app/
 ![Home Page](./src/assets/images/startUpScreen.png)
 ![Activity Cards](./src/assets/images/cardsPage.png)
 ![Hover Function](./src/assets/images/cardsText.png)
@@ -63,7 +63,7 @@ The following websites were used to support this project:
 - Lissa Simpson https://github.com/lissasimp
 
 ## Project Presentation
-
+https://docs.google.com/presentation/d/1i6_o-dKMwr9Z_J4mNsmY9knlEVSNyBfS3uqAzZnFHhw/edit?usp=sharing 
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
