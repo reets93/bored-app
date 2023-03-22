@@ -10,6 +10,7 @@ function ActivityCard(props) {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (   // activity card component
+    
         <div className="activity-card">
             <div className="cardActivity">
                 <img src={props.image} class="card-img" alt="" width="340px" height="240px"></img>
