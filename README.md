@@ -25,15 +25,18 @@ In our team, we have conceived and created our first collaborative front-end, si
 
 ## Usage
 Deployed Page: 
-![Home Page](./src/assets/images/Home%20Page.PNG)
-![Activity Cards](./src/assets/images/Cards.png)
-![Hover Function](./src/assets/images/Hover%20Cards.png)
-![Modal]()
+![Home Page](./src/assets/images/startUpScreen.png)
+![Activity Cards](./src/assets/images/cardsPage.png)
+![Hover Function](./src/assets/images/cardsText.png)
+![Modal](./src/assets/images/YouTube.png)
 
 ## Technologies Used
 - Postman: https://web.postman.co/
 - Figma: https://www.figma.com/
 - VS Code: https://code.visualstudio.com/
+- React.js: https://react.dev/ 
+- Bootstrap: https://react-bootstrap.github.io/ & https://getbootstrap.com/
+- CSS
 
 ## APIs used
 - YouTube API: https://developers.google.com/youtube/v3

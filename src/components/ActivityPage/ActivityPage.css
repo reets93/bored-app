@@ -1,9 +1,11 @@
+/* activites div styling */
 .activities {
     display: flex;
     justify-content: center;
     align-content: center
 }
 
+/* header styling on activity page */
 .header {
     background-color: #3d95b3;
     height: 100px;
@@ -20,5 +22,7 @@
     text-align: center;
     align-content: center;
     justify-content: center;
-    margin: 0; 
+    margin: 0;
 }
+
+/* END header styling on activity page */

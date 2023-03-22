@@ -1,18 +1,6 @@
-/* #frame { */
-   /* top: 60%; */
-   /* transform: translate(-60%, -50%); */
-   /* position: relative; */
- /* } */
-
- /* #frame{ */
-  /* /* display: flex; */
-  /* justify-content: center; 
-  align-self: center; */
-  /* transform: scale(0.5) */
- /* } */
-
+ /* styles and positions the quote on the first page */
  #quote {
-  position: absolute;
+   position: absolute;
    color: black;
    font-size: 20px;
    top: 30em;
@@ -20,42 +8,19 @@
    width: 100%;
  }
 
-  /* #button {
-   position: relative;
-   
-   left: 135% !important;
-   height: 50px;
-   margin-top: 600px;
-   align-self: center;
-   align-self: center;
- }  */
+ /* styles and positions the 'click here' button */
+ #button {
+   display: flex;
+   align-items: center;
+   position: absolute;
+   margin-top: 30em;
+   margin-left: 45%;
+   justify-content: center;
+   z-index: 999;
+ }
 
- #button{ 
-  display: flex;
-  align-items: center;
-  position: absolute;
-  margin-top: 30em;
-  margin-left: 45%;
-  justify-content: center; 
-  z-index: 999;
-   /* display: flex;
-    flex-direction: column */
-  
-  } 
-
-  #frame {
-    display: flex;
-    flex-direction: column;
-  }
-  /* react-icons are default inline  */
- /* #icon {
-  display: block;
-    /* justify-content:left; */
-  /* position: relative;  */
-  /* padding doesn't work! */
-  /* padding-left: 6px;
-  padding-right: 6px; */
-  
-    /* align-items:flex-end;   */
- /* }  */ 
-
+ /* positions the frame div which contains logo, quote and button */
+ #frame {
+   display: flex;
+   flex-direction: column;
+ }

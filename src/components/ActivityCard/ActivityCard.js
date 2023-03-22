@@ -6,22 +6,18 @@ import Button from 'react-bootstrap/button'
 import ExploreModal from '../Explore/ExploreModal';
 
 function ActivityCard(props) {
-    // For modal - remove two consts below if not using Modal
+    // For modal - setting state
     const [modalShow, setModalShow] = React.useState(false);
-    const boredData = props.boredData
-    // console.log("PROPS", props)
-    return (
+
+    return (   // activity card component
         <div className="activity-card">
-        <div className="cardActivity">
-         <img src={props.image} class="card-img" alt="" width="340px" height="240px"></img>
-         <div className="card-main">
-         <h4 className="card-title">{props.type}</h4>
-         <p className="card-info">{props.activity}</p>
-         <div className="d-flex justify-content-center">
-                        {/* <button className='btn btn-primary btn-default'> Explore <FaBinoculars /></button> */}
-                        
-                        
-                        <>{/* for the explore modal button below. I'm wondering whether the details should be mapped somehow on the ActivityPage? OR whether this should be elsewhere in the code?*/}
+            <div className="cardActivity">
+                <img src={props.image} class="card-img" alt="" width="340px" height="240px"></img>
+                <div className="card-main">
+                    <h4 className="card-title">{props.type}</h4>
+                    <p className="card-info">{props.activity}</p>
+                    <div className="d-flex justify-content-center">
+                        <>{/* Button links to explore modal*/}
                             <Button className='cardBtn' activity={props.activity} variant="primary" onClick={() => setModalShow(true)}>
                                 Explore <FaBinoculars />
                             </Button>
@@ -30,7 +26,6 @@ function ActivityCard(props) {
                                 onHide={() => setModalShow(false)}
                             />
                         </> {/* END Explore Modal */}
-                        
                     </div>
                 </div>
             </div>

@@ -1,107 +1,81 @@
-/* .activity-card { */
-/* width: 340px;
-    height: 240px; */
-/* margin-top: 2rem; */
-/* margin-left: 2rem; */
-/* background-image: url('https://images.theconversation.com/files/366100/original/file-20201028-17-8cpm3p.jpg?ixlib=rb-1.1.0&rect=2589%2C92%2C3909%2C3909&q=45&auto=format&w=240&h=240&fit=crop') */
-/* } */
-
-/* .title {
-    font-weight: 700;
-    color: navy;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 30px;
-}
-
-.card-text {
-    color: navy;
-    text-align: center;
-    padding-top: 20px;
-    font-weight: 500;
-    font-size: 20px;
-    /* justify-content: center; */
-/* } */
-
-/* img {
-    border: none;
-}
-
-.bg-dark{
-    background-color: white !important;
-} */
-
+/* styling card component for the activity */
+/* parent */
 .activity-card {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    align-items: center;
-  }
-  
-  .cardActivity {
-    width: 340px;
-    height: 240px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 4px solid #fff;
-    position: relative;
-  }
-  
-  .card-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    /* object-fit: cover; */
-  }
-  
-  .card-main {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: -100%;
-    position: absolute;
-    background: #36778cad;
-    border-radius: 20px;
-    backdrop-filter: blur(2px);
-    color: #fff;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-  }
-  
-  .cardActivity:hover .card-main{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+/*child  */
+.cardActivity {
+  width: 340px;
+  height: 240px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #fff;
+  position: relative;
+}
+
+/* grandchildren */
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card-main {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #36778cad;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+}
+
+.card-info {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+/* button styling for card */
+.cardBtn {
+  color: #fff;
+  padding: 10px;
+  background-color: #023e52;
+  text-align: center;
+  width: 120px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* card hover style */
+.cardBtn:hover {
+  background-color: #1e637a;
+}
+
+.cardActivity:hover .card-main {
   right: 0;
-  }
-  
-  .card-title {
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: center;
-    font-size: 30px;
-  }
-  
-  .card-info {
-    color: #fff;
-    text-align: center;
-    padding-top: 20px;
-    font-weight: 500;
-    font-size: 20px;
-  }
-  
-  .cardBtn {
-    color: #fff;
-    padding: 10px;
-    background-color: #023e52;
-    text-align: center;
-    width: 120px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-  }
-  
-  .cardBtn:hover {
-    background-color: #1e637a;
-  }
-  
+}
+
+/* END card hover style */

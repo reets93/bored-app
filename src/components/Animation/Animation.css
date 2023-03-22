@@ -1,39 +1,24 @@
+/* makes the path of the animation around svg */
 #demo-svg path {
     stroke-dasharray: 100;
     stroke-dashoffset: 0;
 }
 
-/* .animation {
-    position: relative;
-    left: 180px;
-    top: -600px;
-} */
-
+/* positions and styles the animation div */
 /* https://stackoverflow.com/questions/58526959/svg-react-component-will-not-center */
 .animation {
     text-align: center;
     height: 100%;
     width: 100%;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
 
-/* position relative moves icons but near buttons; position absolute icons dispappear and weird diamond on first page BUT position absolute centres the animation */
+/* positions and styles the logo */
 #logo {
-    position:absolute;
+    position: absolute;
     left: 50%;
     top: 30%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     z-index: 500;
 }
-
-/* svg { */
-    /* resize: 'horizontal'; 
-overflow: 'hidden';
-width: '1000px'; */
-/* height: 'auto'; */
-/* margin-left: auto;
-margin-right:auto;
-display: inline-block; */
-/* } */

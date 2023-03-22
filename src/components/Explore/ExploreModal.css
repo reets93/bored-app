@@ -1,9 +1,20 @@
+/* Styling forExplore Modal */
 .explore {
     background-color: rgb(8, 3, 40);
     display: inline-block;
     width: 80%
 }
 
-.card-text{
- text-align: center;
+.card-text {
+    text-align: center;
+}
+
+/* button styling in Explore Modal */
+.btn {
+    background-color: #023e52;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #3d95b3;
 }

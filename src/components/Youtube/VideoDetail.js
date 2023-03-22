@@ -2,11 +2,11 @@ import React from 'react';
 import "./videoDetail.css";
 
 // function to use the selected video details and return render them on the component
-function VideoDetail (props){ //selected video details passed as props
+function VideoDetail(props) { //selected video details passed as props
 
     //building the video src from the videoId
     const videoURL = `https://www.youtube.com/embed/${props.video.id.videoId}`;
-    
+
     // render method xjs
     return (
         <div className='col-lg'>
@@ -20,4 +20,5 @@ function VideoDetail (props){ //selected video details passed as props
         </div>
     );
 }
+
 export default VideoDetail;

@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Youtube from "./components/Youtube/Youtube";
-
 import ActivityPage from "./components/ActivityPage/ActivityPage";
 import FirstPage from "./components/FirstPage/FirstPage"
-import Animation from "./components/Animation/Animation"
 import Footer from "./components/Footer/Footer"
 import Axios from "axios";
 import './App.css';
@@ -24,18 +21,16 @@ function App() {
           activityArray.push(response.data) // pushing result to activityArray
           if (activityArray.length === 9) {
             setBoredData(activityArray);
-          if (isStartButtonClicked === false) { //false = not clicked yet
-            setIsStartButtonClicked(true) // once clicked it will set to true and then be used in the logic in the return
-          }
+            if (isStartButtonClicked === false) { //false = not clicked yet
+              setIsStartButtonClicked(true) // once clicked it will set to true and then be used in the logic in the return
+            }
           }
           console.log("array ", activityArray);
         })
     })
-
-
   }
 
-  return (
+  return ( // returns the activity page & footer, and hides the first page if the 'click here' button has been clicked
     <div>
       {isStartButtonClicked ?
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />

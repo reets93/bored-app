@@ -4,13 +4,13 @@ import "./ExploreModal.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Youtube from "../Youtube/Youtube";
-// import Button from 'react-bootstrap/Button';
 import Modal from "react-bootstrap/Modal";
 
 function ExploreModal(props) {
-  // trying to pass through the boredData to this?
+  // Pass through the boredData 
   const modalData = props.modalData;
-  // console.log("MODALDATA", modalData)
+
+  // If there is modal data, it will return the information in the modal
   if (modalData) {
     return (
       <Modal
@@ -27,7 +27,7 @@ function ExploreModal(props) {
         <Modal.Body>
           <Card.Body>
             <Card.Title>{modalData.activity}</Card.Title>
-            {/* passing the activity to the youtuve.js as props */}
+            {/* passing the activity to the youtube.js as props */}
             <Youtube search={modalData.activity} />
             <Button
               id="google-btn"

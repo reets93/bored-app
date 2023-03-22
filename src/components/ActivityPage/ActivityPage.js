@@ -2,16 +2,14 @@ import React from "react";
 import ActivityCard from "../ActivityCard/ActivityCard";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cardDetails from '../ActivityCard/CardImage.json'
-import Row from "react-bootstrap/Row"
-// import Col from "react-bootstrap/Col"
 import './ActivityPage.css'
 import ExploreModal from "../Explore/ExploreModal";
 
-function ActivityPage(props) { //pulling in boredData as a prop from app which will be useable here. 
+function ActivityPage(props) { //pulling in boredData as a prop from api which will be useable here. 
     const boredData = props.boredData
-    // console.log("BOREDDATA", boredData)
 
-    for (let i = 0; i < boredData.length; i++) {  // can try to refactor this to a switch statement? I wasn't able to get it working as switch statement
+    // if statement to match the correct background image to the activity/type generated from the API
+    for (let i = 0; i < boredData.length; i++) {
         if (boredData[i].type === "social") {
             boredData[i].image = cardDetails[0].image
             boredData.id = cardDetails[0].id
@@ -43,19 +41,16 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
     }
 
     return (
-
         <section>
             <header className="header">
                 <h3>Give these activities a go!</h3>
                 <p id="headerP">Hover over the cards to see the activity</p>
             </header>
 
+            {/* Mapping the activity card and information from the bored API. This also pulls in information from the above if statement */}
             <div className="cards row g-3" >
-                {/* <Row xs={2} md={3} className="g-3"> */}
                 {boredData.map((d, i) => {
-                    // console.log(`Data at ${i}`, d)
                     return (
-                        //key not working - still an error in console
                         <div className="activities col-lg-4 col-md-6 col-sm-12 col-xs-12" key={d.id}>
                             <ActivityCard
                                 icon={d.icon}
@@ -66,9 +61,8 @@ function ActivityPage(props) { //pulling in boredData as a prop from app which w
                         </div>
                     )
                 })}
-                {/* </Row> */}
 
-                {/* Below is attempt to pass boredData to the modal. Remove if not needed */}
+                {/* Pass boredData to the modal */}
                 <ExploreModal boredData={boredData} />
             </div>
         </section>
