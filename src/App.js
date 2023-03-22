@@ -13,7 +13,7 @@ function App() {
   const queryArray = ["social", "recreational", "education", "diy", "charity", "cooking", "relaxation", "music", "busywork"]; // listing out the category names so that later we can call the api in a for loop with the different type as the query
 
   const getCurrentActivites = () => { //will be an onclick function --> two diff components (try this button; and try more)
-    const activityArray = [];// will push api data objects to this array for each query search result
+    const activityArray = []; // will push api data objects to this array for each query search result
 
     queryArray.forEach(q => {
       Axios.get(baseUrl + q)
