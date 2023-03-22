@@ -9,7 +9,7 @@ function App() {
   const [boredData, setBoredData] = useState({}); // state that handles the bored api data
   const [isStartButtonClicked, setIsStartButtonClicked] = useState(false) // to hide/display first page on button click
 
-  const baseUrl = "http://www.boredapi.com/api/activity?type=";
+  const baseUrl = "https://www.boredapi.com/api/activity?type=";
   const queryArray = ["social", "recreational", "education", "diy", "charity", "cooking", "relaxation", "music", "busywork"]; // listing out the category names so that later we can call the api in a for loop with the different type as the query
 
   const getCurrentActivites = () => { //will be an onclick function --> two diff components (try this button; and try more)
