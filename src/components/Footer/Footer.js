@@ -9,7 +9,7 @@ function Footer(props) {
   // const getCurrentActivites = props.getCurrentActivites
 
   return ( // returns the footer
-  
+
     <div>
       <Card id='bottom'>
         <Card.Body id='footer'>

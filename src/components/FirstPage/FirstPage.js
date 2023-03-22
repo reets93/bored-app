@@ -10,7 +10,7 @@ function FirstPage(props) {
   // const getCurrentActivites = props.getCurrentActivities
 
   return ( //returns the animation/logo, quote and button on the first page
-  
+
     <div >
       <div id="frame">
         <Animation></Animation>

@@ -31,7 +31,7 @@ function App() {
   }
 
   return ( // returns the activity page & footer, and hides the first page if the 'click here' button has been clicked
-    
+
     <div>
       {isStartButtonClicked ?
         <> <ActivityPage boredData={boredData} getCurrentActivites={getCurrentActivites} />
