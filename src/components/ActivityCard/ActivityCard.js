@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ActivityCard.css';
 import { FaBinoculars } from "react-icons/fa";
-import Button from 'react-bootstrap/button'
+import Button from 'react-bootstrap/Button'
 import ExploreModal from '../Explore/ExploreModal';
 
 function ActivityCard(props) {
