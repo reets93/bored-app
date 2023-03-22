@@ -31,7 +31,7 @@ function Youtube(props){
 
    return (
             <div id="#youtube-section" className="container">
-                <SearchBar passingFunction={onTermSubmit} />
+                <SearchBar onTermSubmit={onTermSubmit} />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg">

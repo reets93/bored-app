@@ -23,7 +23,7 @@ function ExploreModal(props) {
         centered
       >
         <Modal.Header closeButton>
-          <Modal.Title as="h6" id="contained-modal-title-vcenter">
+          <Modal.Title as="h5" id="contained-modal-title-vcenter">
             {modalData.type}
           </Modal.Title>
         </Modal.Header>
@@ -34,11 +34,11 @@ function ExploreModal(props) {
               {/* Participants needed: {modalData.participants}</Card.Text> */}
             {/* <SearchBar passingFunction={this.onTermSubmit} /> */}
             <Youtube search={modalData.activity}/>
-            <Button href={`https://www.google.com/search?q=${modalData.activity}`} target="_blank" variant="primary">Explore more on Google</Button>
+            <Button id='google-btn' href={`https://www.google.com/search?q=${modalData.activity}`} target="_blank" variant="primary">Explore more on Google</Button>
           </Card.Body>
         </Modal.Body>
-        <Modal.Footer>
-          <Button onClick={props.onHide}>Close</Button>
+        <Modal.Footer className='footer'>
+          <Button id='close-btn' onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
     );

@@ -15,7 +15,7 @@
     font-size: 20px;
     /* text-color: #fff */
     margin-top: 10px;
-    background-color: #3d95b3;
+    background-color: #134252;
     color: #fff;
     outline:none;
     border: none;
@@ -31,7 +31,7 @@
 }
 
 #bottom {
-    background-color: #134252;
+    background-color: #3d95b3;
     /* margin-top: 200px; */
     text-align: center;
     /* width: 200%; */
