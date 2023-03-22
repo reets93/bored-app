@@ -3,19 +3,17 @@ import SearchBar from "./SearchBar"
 import API from "./API";
 import VideoDetail from "./VideoDetail";
 
-
+// youtuve function using props from the modal components and passing props to the searchbar component
 function Youtube(props){
-    console.log(props)
-    const [videos, setVideos] = useState([]);
+    // selectedVideo state definiton and initialisation
     const [selectedVideo, setSelectedVideo] = useState(null);
     
-    
+    //useEffect hook to render the first search when the explore modal button explre is clicked
     useEffect(() => {
-        console.log("running")
-        onTermSubmit(props.search);
-        console.log("running 43")
+        onTermSubmit(props.search); //search the chosen activity video
     }, [])
 
+    // Youtuve Api request
     const onTermSubmit = async (term) => {
         console.log("run")
         const results = await API.get("/search", {
@@ -23,21 +21,19 @@ function Youtube(props){
                 q: term
             },
         });
-        console.log(results)
-        setVideos(results.data.items)
+        //update the selected video state with the first video details from the results
         setSelectedVideo(results.data.items[0])
-        return
     };
-
+// render function
    return (
             <div id="#youtube-section" className="container">
-                <SearchBar passingFunction={onTermSubmit} />
+                {/* //passing the onTermSubmit as props to the SearchBar  */}
+                <SearchBar onTermSubmit={onTermSubmit} />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg">
-                            {console.log(selectedVideo)}
+                            {/* if the selectedvideo is not available yet, do nothing */}
                             {selectedVideo ? <VideoDetail video={selectedVideo} /> : ""}
-                            
                         </div>
                     </div>
                 </div>

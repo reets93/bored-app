@@ -1,18 +1,15 @@
-import React from "react";
-import { FaSearch } from "react-icons/fa";
+import React, {useState} from "react";
 
-class SearchBar extends React.Component {
-  state = { term: "" };
+//searchbar function using the ontermsubmit juction passed from the youtube.js
+function SearchBar(props){
 
-  onFormSubmit = (event) => {
-    event.preventDefault();
-    this.props.passingFunction(this.state.term);
-  };
+  // define the state term and initialse it as an empty string
+  const [term, setTerm] = useState("");
 
-  render() {
+  // form components returned
     return (
       <div className="container-fluid">
-        <form className="form-inline" onSubmit={this.onFormSubmit}>
+        <form className="form-inline" onSubmit={props.onTermSubmit}>
           <div className="form-group mb-2">
             <label for="searchBar" className="sr-only">
               Youtube search
@@ -21,19 +18,18 @@ class SearchBar extends React.Component {
               className="form-control"
               placeholder='Enter your keyword and then press "Enter"'
               type="text"
-              value={this.state.term}
-              onChange={(e) => this.setState({ term: e.target.value })}
+              value={term}
+              // the setTerm updates the term state in the ontermsubmit in the api request in the youtube.js
+              onChange={(e) => setTerm({ term: e.target.value })}
             />
             <small className="form-text text-muted">
               Find a video about your chosen activity
             </small>
-
-            {/* <button className='btn-light 'onClick={this.onFormSubmit}> Search<FaSearch/></button> */}
           </div>
         </form>
       </div>
     );
   }
-}
+
 
 export default SearchBar;
