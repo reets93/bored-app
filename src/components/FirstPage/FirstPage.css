@@ -8,6 +8,11 @@
    width: 100%;
  }
 
+ /* styles and positions the 'click here' button */
+ #button {
+   position: relative;
+   z-index: 999;
+ }  
 
  /* positions the frame div which contains logo, quote and button */
  #frame {
