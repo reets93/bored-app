@@ -8,16 +8,6 @@
    width: 100%;
  }
 
- /* styles and positions the 'click here' button */
- #button {
-   display: flex;
-   align-items: center;
-   position: absolute;
-   margin-top: 30em;
-   margin-left: 45%;
-   justify-content: center;
-   z-index: 999;
- }
 
  /* positions the frame div which contains logo, quote and button */
  #frame {
