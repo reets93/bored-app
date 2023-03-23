@@ -1,5 +1,4 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
 class SearchBar extends React.Component {
   state = { term: "" };
   onFormSubmit = (event) => {

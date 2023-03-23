@@ -14,7 +14,7 @@
  }
 
 
- /* background animation */
+ /* background animation: https://codepen.io/mohaiman/pen/MQqMyo */
  @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 *{
@@ -42,12 +42,10 @@ body{
 
 
 .area{
-    background: #4e54c8;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    background: #3d96b345;
+    background: -webkit-linear-gradient(to left, #73a1b1, #025875);  
     width: 100%;
     height:100vh;
-    
-   
 }
 
 .circles{
@@ -164,4 +162,4 @@ body{
     }
 
 }
-/* end */
+/* end: https://codepen.io/mohaiman/pen/MQqMyo */
