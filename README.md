@@ -25,7 +25,7 @@ In our team, we have conceived and created our first collaborative front-end, si
 
 ## Usage
 Deployed Page: https://bored-app-rkll.netlify.app/
-![Home Page](./src/assets/images/animatedFirst-green.png)
+![Home Page](./src/assets/images/animatedFirst.png)
 ![Activity Cards](./src/assets/images/activityPage.png)
 ![Hover Function](./src/assets/images/cardsText.png)
 ![Modal](./src/assets/images/Modal.png)
@@ -54,6 +54,7 @@ The following websites were used to support this project:
 - https://animejs.com/documentation/#lineDrawing
 - https://css-tricks.com/scale-svg/
 - https://www.youtube.com/watch?v=3RvQJX1_fKQ&t=618s
+- https://codepen.io/mohaiman/pen/MQqMyo 
 
 
 ## Colloborators
