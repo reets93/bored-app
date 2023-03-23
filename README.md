@@ -25,7 +25,7 @@ In our team, we have conceived and created our first collaborative front-end, si
 
 ## Usage
 Deployed Page: https://bored-app-rkll.netlify.app/
-![Home Page](./src/assets/images/animated-first.png)
+![Home Page](./src/assets/images/animatedFirst-green.png)
 ![Activity Cards](./src/assets/images/cardsPage.png)
 ![Hover Function](./src/assets/images/cardsText.png)
 ![Modal](./src/assets/images/YouTube.png)
